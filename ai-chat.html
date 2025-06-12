@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Literacy Course - AI Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>DigiLearn</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="ai-chat.html" class="active">AI Chat</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="ai-chat-container">
+            <div class="page-header">
+                <h2>Chat with DigiBuddy</h2>
+                <p>Your AI assistant for digital literacy questions</p>
+            </div>
+            
+            <div class="chat-box" id="chatBox">
+                <div class="chat-message ai">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Hello! I'm DigiBuddy, your digital literacy assistant. How can I help you today?</p>
+                    </div>
+                </div>
+                <!-- Chat messages will be added here dynamically -->
+            </div>
+            
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Type your question here...">
+                <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+            </div>
+            
+            <div class="popular-questions">
+                <h3>Suggested Questions:</h3>
+                <div class="questions-grid">
+                    <button class="question-btn">How do I make a WhatsApp video call?</button>
+                    <button class="question-btn">What is online banking?</button>
+                    <button class="question-btn">How to stay safe online?</button>
+                    <button class="question-btn">How do I use Google Maps?</button>
+                    <button class="question-btn">How to create a strong password?</button>
+                    <button class="question-btn">How to use Paytm?</button>
+                    <button class="question-btn">How to protect my privacy on Facebook?</button>
+                    <button class="question-btn">How to book an Uber ride?</button>
+                    <button class="question-btn">What is two-factor authentication?</button>
+                    <button class="question-btn">How to shop online safely?</button>
+                    <button class="question-btn">How do I create an email account?</button>
+                    <button class="question-btn">How to avoid online scams?</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>DigiLearn</h3>
+                <p>Empowering Digital Literacy!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="ai-chat.html">AI Chat</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: simplysharaj@gmail.com</p>
+                <p>Phone: 1234567890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DigiLearn - Digital Literacy Course. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="ai-chat.js"></script>
+</body>
+</html>

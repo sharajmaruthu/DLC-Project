@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Literacy Course - Tutorials</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>DigiLearn</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tutorials.html" class="active">Tutorials</a></li>
+                <li><a href="ai-chat.html">AI Chat</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <div class="user-info">
+            <span><i class="fas fa-user"></i> sharajmaruthu</span>
+        </div>
+    </header>
+    
+    <main>
+        <section class="page-header">
+            <h2>Learn Digital Skills</h2>
+            <p>Browse our collection of easy-to-follow tutorials</p>
+        </section>
+        
+        <section class="tutorial-categories">
+            <button class="category active" data-category="all">All</button>
+            <button class="category" data-category="communication">Communication</button>
+            <button class="category" data-category="payments">Payments</button>
+            <button class="category" data-category="navigation">Navigation</button>
+        </section>
+        
+        <section class="tutorials-grid">
+            <div class="tutorial-card" data-category="communication" data-video="y3EdIiJeTXk">
+                <div class="tutorial-img">
+                    <img src="imgs/whatsapptut.png" alt="WhatsApp Tutorial">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="tutorial-content">
+                    <h3>WhatsApp Basics</h3>
+                    <p>Learn how to send messages, make calls, and share media on WhatsApp. Perfect for beginners who want to stay connected with friends and family.</p>
+                    <button class="btn watch-tutorial">Watch Tutorial</button>
+                </div>
+            </div>
+            
+            <div class="tutorial-card" data-category="payments" data-video="TIa7AgEmX2g">
+                <div class="tutorial-img">
+                    <img src="imgs/paytmtut.png" alt="Paytm Tutorial">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="tutorial-content">
+                    <h3>Using Paytm</h3>
+                    <p>Send money, pay bills, and shop securely with Paytm. This tutorial covers account setup, payment methods, and security features.</p>
+                    <button class="btn watch-tutorial">Watch Tutorial</button>
+                </div>
+            </div>
+            
+            <div class="tutorial-card" data-category="navigation" data-video="tui9hq9lfsU">
+                <div class="tutorial-img">
+                    <img src="imgs/mapstut.png" alt="Google Maps Tutorial">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="tutorial-content">
+                    <h3>Google Maps Navigation</h3>
+                    <p>Find directions, explore places, and save favorite locations. Learn to navigate public transportation and get traffic updates in real-time.</p>
+                    <button class="btn watch-tutorial">Watch Tutorial</button>
+                </div>
+            </div>
+            
+            <div class="tutorial-card" data-category="communication" data-video="1XctnF7C74s">
+                <div class="tutorial-img">
+                    <img src="imgs/emailtut.png" alt="Email Tutorial">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="tutorial-content">
+                    <h3>Email Essentials</h3>
+                    <p>Create an email account, send emails, and organize your inbox. Learn about attachments, calendar integration, and spam protection.</p>
+                    <button class="btn watch-tutorial">Watch Tutorial</button>
+                </div>
+            </div>
+            
+            <div class="tutorial-card" data-category="payments" data-video="oADxUX4STjE">
+                <div class="tutorial-img">
+                    <img src="imgs/inttut.png" alt="Online Banking Tutorial">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="tutorial-content">
+                    <h3>Online Banking</h3>
+                    <p>Check balances, transfer funds, and secure your account. Learn safe practices for managing your finances digitally and avoiding fraud.</p>
+                    <button class="btn watch-tutorial">Watch Tutorial</button>
+                </div>
+            </div>
+            
+            <div class="tutorial-card" data-category="navigation" data-video="D8HI7Bg4Dqw">
+                <div class="tutorial-img">
+                    <img src="imgs/ubertut.png" alt="Uber Tutorial">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="tutorial-content">
+                    <h3>Uber Ride Booking</h3>
+                    <p>Book rides, track your driver, and pay for transportation. Learn how to use ride-sharing apps safely and efficiently for your travel needs.</p>
+                    <button class="btn watch-tutorial">Watch Tutorial</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="video-container">
+                <iframe id="youtubeVideo" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>DigiLearn</h3>
+                <p>Empowering Digital Literacy!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="ai-chat.html">AI Chat</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: simplysharaj@gmail.com</p>
+                <p>Phone: 1234567890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DigiLearn - Digital Literacy Course. All rights reserved.</p>
+            <p class="datetime">Current time: 2025-06-12 11:20:33 UTC</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
